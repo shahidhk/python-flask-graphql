@@ -11,8 +11,6 @@ using Flask.
 git clone https://github.com/shahidhk/python-flask-graphql
 ```
 
-Run the webhook using any of the tree methods below:
-
 ### Run locally
 
 ```bash
