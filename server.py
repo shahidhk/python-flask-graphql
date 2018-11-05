@@ -17,6 +17,6 @@ class Mutation(graphene.ObjectType):
     def resolve_dummy_mutation(self, info):
         return "this is a dummy mutation"
 
-schema = graphene.Schema(query=Query)
+schema = graphene.Schema(query=Query, mutation=Mutation)
 
 app.add_url_rule('/graphql', view_func=GraphQLView.as_view('graphql', schema=schema, graphiql=True))
